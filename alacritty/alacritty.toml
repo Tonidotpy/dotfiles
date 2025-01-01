@@ -1,0 +1,11 @@
+[general]
+import = [
+    "${XDG_CONFIG_HOME}/alacritty/themes/themes/kanagawa_wave.toml"
+]
+
+[window]
+decorations = "None"
+
+[font]
+normal = { family = "Jetbrains Mono", style = "Regular" }
+size = 8
