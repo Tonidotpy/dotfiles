@@ -1,0 +1,20 @@
+#define FOREGROUND      #dfdfdf
+#define FOREGROUND_ALT  #555555
+#define BACKGROUND      #222222
+#define BACKGROUND_ALT  #444444
+
+#define PRIMARY         #ffa230
+#define PRIMARY_ALT     #ffa230
+#define SECONDARY       #367cff
+#define SECONDARY_ALT   #367cff
+
+#define WARNING         #ed6024
+#define ALERT           #ff1b0a
+
+#define WHITE           #ffffff
+#define BLACK           #000000
+
+#define COLOR0          #000000
+#define COLOR1          #000000
+#define COLOR2          #000000
+#define COLOR3          #000000

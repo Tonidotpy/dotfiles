@@ -1,0 +1,59 @@
+#include "/home/tonidotpy/.xcolors/summer"
+
+! Default colors
+*.foreground:  FOREGROUND
+*.background:  BACKGROUND
+*.cursorColor: FOREGROUND
+*.color0:  BLACK
+*.color1:  PRIMARY
+*.color2:  SECONDARY
+*.color3:  PRIMARY_ALT
+*.color4:  SECONDARY_ALT
+*.color5:  WARNING
+*.color6:  ALERT
+*.color7:  FOREGROUND
+*.color8:  BACKGROUND
+*.color9:  FOREGROUND_ALT
+*.color10: BACKGROUND_ALT
+*.color11: COLOR0
+*.color12: COLOR1
+*.color13: COLOR2
+*.color14: COLOR3
+*.color15: WHITE
+
+! special
+! *.foreground:   #c8c9d6
+! *.background:   #121418
+! *.cursorColor:  #c8c9d6
+!
+! ! black
+! *.color0:       #1f1f2f
+! *.color8:       #3c3c4c
+!
+! ! red
+! *.color1:       #ae3333
+! *.color9:       #cb5050
+!
+! ! green
+! *.color2:       #2eb030
+! *.color10:      #4bcd4d
+!
+! ! yellow
+! *.color3:       #d98c4e
+! *.color11:      #f6a96b
+!
+! ! blue
+! *.color4:       #5199c8
+! *.color12:      #6eb6e5
+!
+! ! magenta
+! *.color5:       #b36ccb
+! *.color13:      #d089e8
+!
+! ! cyan
+! *.color6:       #6cbab0
+! *.color14:      #89d7cd
+!
+! ! white
+! *.color7:       #828e99
+! *.color15:      #9fabb6
