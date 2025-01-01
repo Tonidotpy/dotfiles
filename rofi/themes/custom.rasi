@@ -1,0 +1,220 @@
+@import "global"
+
+* {
+        margin: 0;
+        padding: 0;
+        font: "JetBrainsMono 10";
+
+        // White: #fff;
+        // Black: #000;
+
+        // Background:     #222;
+        // BackgroundAlt:  #444;
+        // Foreground:     #dfdfdf;
+        // ForegroundAlt:  #555;
+
+        // Primary:        #ffa230;
+        // PrimaryAlt:     #f2ab3f;
+        // Secondary:      #367cff;
+        // SecondaryAlt:   #4eaff5;
+
+        Transparent:     #0000;
+        SemiTransparent: #0005;
+        Opaque:          #000a;
+
+        // Warning: #ed6024;
+        // Alert:   #ff1b0a;
+
+        Full:    #53f74a;
+        Good:    #a5fa49;
+        Half:    #f6fc47;
+        Quarter: #ff5e00;
+        Empty:   #f54040;
+}
+
+window {
+        padding: 20 10;
+
+        border: 2 0 2 0;
+        border-color: var(Primary);
+        border-radius: 20;
+
+        color: var(Foreground);
+        background-color: var(Opaque);
+
+        /* transparency: "real"; */
+}
+
+mainbox{
+        color: inherit;
+        background-color: var(SemiTransparent);
+
+        border-radius: 10;
+}
+
+inputbar {
+        color: inherit;
+        background-color: inherit;
+
+        border: 2;
+        border-color: var(BackgroundAlt);
+        border-radius: 10 10 0 0;
+}
+
+box {
+        color: inherit;
+        background-color: inherit;
+}
+
+prompt {
+        padding: 2 7;
+
+        color: inherit;
+        background-color: inherit;
+
+        border: 0 1 0 0;
+        border-color: var(ForegroundAlt);
+}
+
+entry {
+        padding: 0 5;
+
+        vertical-align: 0.5;
+
+        color: inherit;
+        background-color: inherit;
+
+        blink: true;
+}
+
+case-indicator {
+        padding: 2 7;
+
+        text: bold;
+
+        color: inherit;
+        background-color: inherit;
+
+        border: 0 0 0 1;
+        border-color: var(ForegroundAlt);
+}
+
+num-rows {
+        color: inherit;
+        background-color: inherit;
+}
+
+num-filtered-rows {
+        color: inherit;
+        background-color: inherit;
+}
+
+listview {
+        padding: 10;
+
+        color: inherit;
+        background-color: inherit;
+
+        border: 0 2;
+        border-color: var(Background);
+
+        scrollbar: true;
+}
+
+scrollbar {
+        color: inherit;
+        background-color: var(Background);
+
+        handle-width: 7;
+        handle-color: var(Primary);
+
+        border-radius: 5;
+}
+
+element {
+        margin: 1;
+        padding: 1 7;
+
+        color: inherit;
+        background-color: var(Transparent);
+
+        border-radius: 5;
+}
+element selected {
+        color: var(Foreground);
+        background-color: var(BackgroundAlt);
+}
+
+element-icon {
+        color: inherit;
+        background-color: inherit;
+
+        border-radius: 10;
+}
+
+element-index {
+        padding: 1;
+
+        color: inherit;
+        background-color: inherit;
+}
+
+element-text {
+        margin: 0 5;
+        padding: 1 7;
+
+        color: inherit;
+        background-color: inherit;
+
+        highlight: var(Secondary);
+}
+element-text selected {
+        highlight: var(Primary);
+}
+
+mode-switcher {
+        color: var(Foreground);
+        background-color: var(Background);
+
+        border-radius: 0 0 10 10;
+}
+
+button {
+        padding: 2;
+
+        color: inherit;
+        background-color: inherit;
+}
+button selected {
+        color: var(Background);
+        background-color: var(PrimaryAlt);
+}
+
+message {
+        padding: 5 9;
+
+        color: inherit;
+        background-color: inherit;
+
+        border: 0 2 3 2;
+        border-color: var(Background);
+}
+error-message {
+        padding: 5 9;
+
+        color: inherit;
+        background-color:inherit;
+
+        border: 0;
+        border-color: var(Background);
+}
+
+textbox {
+        padding: 2 7;
+
+        color: inherit;
+        background-color: inherit;
+
+        border: 3 2 0 2;
+        border-color: var(Background);
+}

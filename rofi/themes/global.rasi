@@ -1,0 +1,14 @@
+* {
+	White: 	#ffffff;
+	Black: 	#000000;
+	Background: 	#1a0303;
+	BackgroundAlt: 	#45312e;
+	Foreground: 	#e9efe7;
+	ForegroundAlt: 	#cdce9a;
+	Primary: 	#d41e1e;
+	PrimaryAlt: 	#ff5900;
+	Secondary: 	#ffc800;
+	SecondaryAlt: 	#ff9a16;
+	Warning: 	#ffff00;
+	Alert: 	#8100c6;
+}

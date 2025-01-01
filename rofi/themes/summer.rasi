@@ -1,0 +1,151 @@
+// TODO: Completare il tema
+// TODO: Sistemare num-rows e num-filtered-rows (non si vedono i numeri nella barra di ricerca)
+* {
+        margin: 0;
+        padding: 0;
+        font: "JetBrainsMono 10";
+
+        White: #fff;
+        Black: #000;
+
+        Background:     #1a0303;
+        BackgroundAlt:  #45312e;
+        Foreground:     #e9efe7;
+        ForegroundAlt:  #45312e;
+
+        Primary:        #d41e1e;
+        PrimaryAlt:     #ff5900;
+        Secondary:      #ffc800;
+        SecondaryAlt:   #ff9a16;
+
+        Transparent:     #0000;
+        SemiTransparent: #0005;
+        Opaque:          #000a;
+
+        Warning: #ffff00;
+        Alert:   #8100c6;
+
+        Full:    #53f74a;
+        Good:    #a5fa49;
+        Half:    #f6fc47;
+        Quarter: #ff5e00;
+        Empty:   #f4040;
+}
+
+window {
+        border: 2 0 0 0;
+        border-color: var(Primary);
+
+        color: var(Foreground);
+        background-color: var(Background);
+}
+
+mainbox {
+        color: inherit;
+        background-color: inherit;
+}
+inputbar {
+        color: inherit;
+        background-color: inherit;
+}
+
+box {
+        color: inherit;
+        background-color: inherit;
+}
+
+prompt {
+        color: inherit;
+        background-color: inherit;
+}
+
+entry {
+        vertical-align: 0.5;
+
+        color: inherit;
+        background-color: inherit;
+
+        blink: true;
+}
+
+case-indicator {
+        text: bold;
+
+        color: inherit;
+        background-color: inherit;
+}
+
+num-rows {
+        color: inherit;
+        background-color: inherit;
+}
+num-filtered-rows {
+        color: inherit;
+        background-color: inherit;
+}
+
+listview {
+        color: inherit;
+        background-color: inherit;
+}
+
+scrollbar {
+        color: inherit;
+        background-color: inherit;
+
+        handle-width: 7;
+        handle-color: var(Primary);
+}
+
+element {
+        color: inherit;
+        background-color: var(Background);
+}
+element selected {
+        color: inherit;
+        background-color: var(Primary);
+}
+element-icon {
+        color: inherit;
+        background-color: inherit;
+}
+element-index {
+        color: inherit;
+        background-color: inherit;
+}
+element-text {
+        color: inherit;
+        background-color: inherit;
+}
+element-text selected {
+        color: inherit;
+        background-color: inherit;
+}
+
+mode-switcher {
+        color: inherit;
+        background-color: inherit;
+}
+
+button {
+        color: inherit;
+        background-color: inherit;
+}
+button selected {
+        color: inherit;
+        background-color: inherit;
+}
+
+message {
+        color: inherit;
+        background-color: inherit;
+}
+error-message {
+        color: inherit;
+        background-color: inherit;
+}
+
+textbox {
+        color: inherit;
+        background-color: inherit;
+}

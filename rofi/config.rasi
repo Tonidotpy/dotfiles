@@ -1,0 +1,125 @@
+configuration {
+/* --- General --- */
+              modi: "drun,calc,filebrowser,window";
+              terminal: "rofi-sensible-terminal";
+
+              sidebar-mode: true;
+
+              threads: 0;
+// Monitor
+              // monitor: "-5";
+              dpi: -1;
+// Sorting
+              sort: true;
+              // sorting-method: "normal";
+// Selection
+              hover-select: false;
+              auto-select: false;
+              matching: "normal";
+              cycle: false;
+              // tokenize: true;
+              // filter: ;
+              // scroll-method: 0;
+
+/* --- Appearance --- */
+// Position
+              location: 0;
+              yoffset: 0;
+              // xoffset: 0;
+// Lines
+              eh: 1;  // Line height
+              fixed-num-lines: false;
+// Font
+              font: "JetbrainsMono 10";
+              case-sensitive: false;
+// Icons
+              show-icons: true;
+              icon-theme: "papirus-dark";
+              // application-fallback-icon: ;
+
+/* --- Commands --- */
+// Secure SHell
+              // display-ssh: ;
+              // ssh-client: "ssh";
+              // ssh-command: "{terminal} -e {ssh-client} {host} [-p {port}]";
+              run-shell-command: "{terminal} zsh -c {cmd}";
+// Run
+              // display-run: ;
+              // run-command: "{cmd}";
+              // run-list-command = "";
+// Window
+              // display-window: ;
+              // display-windowcd: ;
+              // window-command: "wmctrl -i -R {window}";
+              // window-match-fields: "all";
+              // window-format: "{w}    {c}   {t}";
+              // window-thumbnail: false;
+// Desktop Run
+              // display-drun: ;
+              // drun-match-fields: "name,generic,exec,categories,keywords";
+              // drun-categories: ;
+              drun-show-actions: true;
+              // drun-display-format: "{name} [<span weight='light' size='small'><i>({generic})</i></span>]";
+              drun-url-launcher: "mimeo";
+              // drun-use-desktop-cache: false;
+              // drun-reload-desktop-cache: false;
+// File Browser
+              // display-filebrowser: ;
+// Calculator
+              // display-calc: ;
+// Keys
+              // display-keys: ;
+              // kb-primary-paste: "Control+V,Shift+Insert";
+              // kb-secondary-paste: "Control+v,Insert";
+              // kb-clear-line: "Control+w";
+              // kb-move-front: "Control+a";
+              // kb-move-end: "Control+e";
+              // kb-move-word-back: "Alt+b,Control+Left";
+              // kb-move-word-forward: "Alt+f,Control+Right";
+              // kb-move-char-back: "Left,Control+b";
+              // kb-move-char-forward: "Right,Control+f";
+              // kb-remove-word-back: "Control+Alt+h,Control+BackSpace";
+              // kb-remove-word-forward: "Control+Alt+d";
+              // kb-remove-char-forward: "Delete,Control+d";
+              // kb-remove-char-back: "BackSpace,Shift+BackSpace,Control+h";
+              // kb-remove-to-eol: "Control+k";
+              // kb-remove-to-sol: "Control+u";
+              // kb-accept-entry: "Control+j,Control+m,Return,KP_Enter";
+              // kb-accept-custom: "Control+Return";
+              // kb-accept-custom-alt: "Control+Shift+Return";
+              // kb-accept-alt: "Shift+Return";
+              // kb-delete-entry: "Shift+Delete";
+              // kb-mode-next: "Shift+Right,Control+Tab";
+              // kb-mode-previous: "Shift+Left,Control+ISO_Left_Tab";
+              // kb-mode-complete: "Control+l";
+              // me-accept-custom: "Control+MouseDPrimary";
+
+// Combinations
+              // display-combi: ;
+              // combi-modi: "window,run";
+              // combi-hide-mode-prefix: false;
+
+/* --- Misc --- */
+              disable-history: false;
+              // max-history-size: 25;
+              // ignored-prefixes: "";
+              // parse-hosts: false;
+              // parse-known-hosts: true;
+              click-to-exit: true;
+              // matching-negate-char: '-'; // unsupported
+              // cache-dir: ;
+              // normalize-match: false;
+              // steal-focus: false;
+              // pid: "/tmp/1000-runtime-dir/rofi.pid";
+  timeout {
+              action: "kb-cancel";
+              delay:  0;
+  }
+  filebrowser {
+              directory: "/home/tonidotpy";
+              directories-first: true;
+              sorting-method:    "name";
+  }
+}
+
+@theme "themes/custom"
