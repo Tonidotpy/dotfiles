@@ -14,8 +14,8 @@ map('n', '<leader>fe', vim.cmd.Oil, { desc = 'open file editor' })
 map('n', '<leader>r', ':e<CR>', { desc = 'reload current file' })
 
 -- Open config files
-map('n', '<leader>fc', ':e ' .. vim.fn.stdpath('config') .. '/lua/' .. vim.env.User .. '/set.lua<CR>', { desc = 'open neovim configuration file' })
-map('n', '<leader>fm', ':e ' .. vim.fn.stdpath('config') .. '/lua/' .. vim.env.User .. '/remap.lua<CR>', { desc = 'open neovim remaps file' })
+map('n', '<leader>fc', ':e ' .. vim.fn.stdpath('config') .. '/lua/' .. vim.env.USER .. '/set.lua<CR>', { desc = 'open neovim configuration file' })
+map('n', '<leader>fm', ':e ' .. vim.fn.stdpath('config') .. '/lua/' .. vim.env.USER .. '/remap.lua<CR>', { desc = 'open neovim remaps file' })
 
 map('n', '<leader>fC', ':e ' .. vim.env.XDG_CONFIG_HOME .. '<CR>', { desc = 'open the XDG_CONFIG_HOME folder' })
 map('n', '<leader>fd', ':e ' .. vim.env.HOME .. '/Desktop<CR>', { desc = 'open the desktop' })
