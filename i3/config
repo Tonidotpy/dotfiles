@@ -110,6 +110,9 @@ bindsym $mod+Return exec alacritty
 # Kill focused window
 bindsym $mod+Shift+q kill
 
+# Open librewolf
+bindsym $mod+u exec --no-startup-id librewolf
+
 # Open rofi
 bindsym $mod+d exec --no-startup-id rofi -terminal "alacritty -e" -show drun
 bindsym $mod+Tab exec --no-startup-id rofi -terminal "alacritty -e" -show drun
