@@ -1,4 +1,4 @@
 function update --description "Update system and flatpak packges"
     sudo xbps-install -Su
-    sudo flatpak update
+    command -v flatpak && sudo flatpak update
 end
