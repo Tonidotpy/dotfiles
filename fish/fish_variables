@@ -1,5 +1,13 @@
 # This file contains fish universal variable definitions.
 # VERSION: 3.0
+SETUVAR --export ELM_DISPLAY:wl
+SETUVAR --export LIBVA_DRIVER_NAME:iHD
+SETUVAR --export MOZ_ENABLE_WAYLAND:1
+SETUVAR --export QT_QPA_PLATFORM:wayland\x2degl
+SETUVAR --export SDL_VIDEODRIVER:wayland
+SETUVAR --export XDG_CONFIG_HOME:/home/tonidotpy/\x2econfig/
+SETUVAR --export XDG_RUNTIME_DIR:/run/user/1000
+SETUVAR --export XDG_SESSION_TYPE:wayland
 SETUVAR __fish_initialized:3400
 SETUVAR fish_color_autosuggestion:brblack
 SETUVAR fish_color_cancel:\x2dr
