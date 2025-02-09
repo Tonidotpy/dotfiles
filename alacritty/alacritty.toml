@@ -7,5 +7,5 @@ import = [
 decorations = "None"
 
 [font]
-normal = { family = "Jetbrains Mono", style = "Regular" }
-size = 8
+normal = { family = "RobotoMono Nerd Font", style = "Regular" }
+size = 13

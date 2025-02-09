@@ -1,8 +1,25 @@
 function tellme --description "Ask the cow to say something"
+    not command -v fortune
+        and printf "Missing fortune package\n"
+        and return
+    not command -v cowsay
+        and printf "Missing cowsay package\n"
+        and return
+    not command -v lolcat
+        and printf "Missing lolcat package\n"
+        and return
+    
     fortune -a | cowsay | lolcat
 end
 
 function lls --description "List files in a fancy way"
+    not command -v cowsay
+        and printf "Missing cowsay package\n"
+        and return
+    not command -v lolcat
+        and printf "Missing lolcat package\n"
+        and return
+    
     ls $1 | cowsay -nf stegosaurus | lolcat
 end
 
