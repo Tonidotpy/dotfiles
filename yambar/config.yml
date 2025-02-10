@@ -1,7 +1,7 @@
-main-font: &main-font Roboto Mono Nerd Font:style=solid:pixelsize=14
+main-font: &main-font Roboto Mono Nerd Font:style=solid:pixelsize=15
 
 bar:
-  height: 25
+  height: 30
   location: top
   spacing: 5
   margin: 0

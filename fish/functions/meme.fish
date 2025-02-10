@@ -1,11 +1,11 @@
 function tellme --description "Ask the cow to say something"
-    not command -v fortune
+    ! command -v fortune > /dev/null
         and printf "Missing fortune package\n"
         and return
-    not command -v cowsay
+    ! command -v cowsay > /dev/null
         and printf "Missing cowsay package\n"
         and return
-    not command -v lolcat
+    ! command -v lolcat > /dev/null
         and printf "Missing lolcat package\n"
         and return
     
@@ -13,10 +13,10 @@ function tellme --description "Ask the cow to say something"
 end
 
 function lls --description "List files in a fancy way"
-    not command -v cowsay
+    ! command -v cowsay > /dev/null
         and printf "Missing cowsay package\n"
         and return
-    not command -v lolcat
+    ! command -v lolcat > /dev/null
         and printf "Missing lolcat package\n"
         and return
     
