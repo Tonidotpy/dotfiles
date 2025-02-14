@@ -8,6 +8,9 @@ if status is-login
         chmod 0700 "$XDG_RUNTIME_DIR"
     end
 
+    # Set default brightness
+    light -S 20
+
     # Start River Window Manager
     dbus-run-session river
 end

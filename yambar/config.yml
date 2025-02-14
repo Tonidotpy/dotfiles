@@ -82,6 +82,6 @@ bar:
                   <<: *volume
     - battery:
         name: BAT1
-        poll-interval: 0
+        poll-interval: 60000
         content:
           string: {text: "{state}  {capacity}%  {estimate}"}

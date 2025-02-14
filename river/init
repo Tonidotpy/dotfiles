@@ -39,7 +39,7 @@ riverctl map normal Super Comma focus-output previous
 riverctl map normal Super+Shift Period send-to-output next
 riverctl map normal Super+Shift Comma send-to-output previous
 
-# Super+Return to bump the focused view to the top of the layout stack
+# Super+Shift+Return to bump the focused view to the top of the layout stack
 riverctl map normal Super+Shift Return zoom
 
 # Super+H and Super+L to decrease/increase the main ratio of rivertile(1)
@@ -132,7 +132,8 @@ do
     # Control pulse audio volume with pamixer (https://github.com/cdemoulins/pamixer)
     riverctl map $mode None XF86AudioRaiseVolume  spawn 'wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+'
     riverctl map $mode None XF86AudioLowerVolume  spawn 'wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%-'
-    riverctl map $mode None XF86AudioMute         spawn 'wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle'
+    riverctl map $mode None XF86AudioMute         spawn 'wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle'
+    riverctl map $mode None XF86AudioMicMute      spawn 'wpctl set-mute @DEFAULT_AUDIO_SOURCE@ toggle'
 
     # Control MPRIS aware media players with playerctl (https://github.com/altdesktop/playerctl)
     riverctl map $mode None XF86AudioMedia spawn 'playerctl play-pause'
@@ -140,9 +141,12 @@ do
     riverctl map $mode None XF86AudioPrev  spawn 'playerctl previous'
     riverctl map $mode None XF86AudioNext  spawn 'playerctl next'
 
-    # Control screen backlight brightness with brightnessctl (https://github.com/Hummer12007/brightnessctl)
-    riverctl map $mode None XF86MonBrightnessUp   spawn 'brightnessctl set +5%'
-    riverctl map $mode None XF86MonBrightnessDown spawn 'brightnessctl set 5%-'
+    # Control screen backlight brightness with light (https://gitlab.com/dpeukert/light)
+    riverctl map $mode None XF86MonBrightnessUp   spawn 'light -A 5'
+    riverctl map $mode None XF86MonBrightnessDown spawn 'light -U 5'
+
+    # Open calculator with qalc
+    riverctl map $mode None XF86Calculator spawn 'alacritty -e qalc'
 done
 
 # Set background and border color
@@ -167,7 +171,15 @@ riverctl rule-add -app-id "*" ssd
 riverctl default-layout rivertile
 rivertile -view-padding 0 -outer-padding 0 &
 
+# Configure touchpad
+touchpad=$(riverctl list-inputs | grep -i touchpad)
+riverctl input $touchpad tap enabled # Enable click-on-tap
+riverctl input $touchpad scroll-factor 0.6 # Slow down scroll speed
+
 # Start mandatory applications
+libinput-gestures-setup start # Touchpad gestures
+
 pipewire &  # Audio
 yambar &    # Status bar
 devmon &    # Automount
+swaybg -m fill -i ~/Media/school-of-serenity.png -c 000000 &
