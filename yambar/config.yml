@@ -14,14 +14,20 @@ bar:
   left:
     - river:
         title:
-          map:
-            conditions:
-              title != "":
-                string:
-                  text: "{title}"
-                  margin: 10
-                  deco:
-                    background: { color: 0x93a1a1 }
+          - string:
+              text: "{mode}"
+              margin: 10
+              deco:
+                background: { color: b54427ff }
+          - map:
+              conditions:
+                title != "":
+                  string:
+                    text: "{title}"
+                    max: 40
+                    margin: 10
+                    deco:
+                      background: { color: 27687fff }
         content:
           map:
             conditions:
