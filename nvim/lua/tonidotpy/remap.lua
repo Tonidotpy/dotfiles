@@ -19,7 +19,7 @@ map('n', '<leader>fm', ':e ' .. vim.fn.stdpath('config') .. '/lua/' .. vim.env.U
 
 map('n', '<leader>fC', ':e ' .. vim.env.XDG_CONFIG_HOME .. '<CR>', { desc = 'open the XDG_CONFIG_HOME folder' })
 map('n', '<leader>fd', ':e ' .. vim.env.HOME .. '/Desktop<CR>', { desc = 'open the desktop' })
-map('n', '<leader>fw', ':e ' .. vim.env.HOME .. '/Desktop/informatica/eagletrt<CR>', { desc = 'open the work folder' })
+map('n', '<leader>fw', ':e ' .. vim.env.HOME .. '/Desktop/igol<CR>', { desc = 'open the work folder' })
 
 -- Telescope
 map('n', '<leader>fs', '<cmd>Telescope find_files<CR>', { desc = 'telescope find files' })

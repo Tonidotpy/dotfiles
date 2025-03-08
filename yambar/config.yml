@@ -44,9 +44,9 @@ bar:
           string: {text: "{time}    {date}"}
 
   right:
-    - network:
-        content:
-          string: { text: "{name}: {state}", margin: 5 }
+    # - network:
+    #     content:
+    #       string: { text: "{name}: {state}", margin: 5 }
     - backlight:
         name: intel_backlight
         content:

@@ -15,6 +15,7 @@ riverctl keyboard-layout it
 riverctl map normal Super Return spawn alacritty
 riverctl map normal Super Tab spawn fuzzel
 riverctl map normal Super W spawn librewolf
+riverctl map normal Super S spawn 'grim -t png -g $(slurp) - | wl-copy'
 
 # Super+Q to close the focused view
 riverctl map normal Super+Shift Q close
@@ -96,7 +97,7 @@ done
 
 # Super+0 to focus all tags
 # Super+Shift+0 to tag focused view with all tags
-all_tags=$(((1 << 32) - 1))
+all_tags=$(((1 << 9) - 1))
 riverctl map normal Super 0 set-focused-tags $all_tags
 riverctl map normal Super+Shift 0 set-view-tags $all_tags
 
@@ -150,9 +151,9 @@ do
 done
 
 # Set background and border color
-riverctl background-color 0x002b36
-riverctl border-color-focused 0x93a1a1
-riverctl border-color-unfocused 0x586e75
+riverctl background-color 0x000000
+riverctl border-color-focused 0x95c4e5
+riverctl border-color-unfocused 0x97a7b2
 
 # Set keyboard repeat rate
 riverctl set-repeat 50 300
