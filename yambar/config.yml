@@ -90,4 +90,6 @@ bar:
         name: BAT1
         poll-interval: 60000
         content:
-          string: {text: "{state}  {capacity}%  {estimate}"}
+          string:
+            text: "{state}  {capacity}%  {estimate}"
+            right-margin: 10
