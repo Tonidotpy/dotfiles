@@ -90,6 +90,23 @@ bar:
         name: BAT1
         poll-interval: 60000
         content:
-          string:
-            text: "{state}  {capacity}%  {estimate}"
-            right-margin: 10
+          map:
+            default:
+                string:
+                  text: "{state}  {capacity}%  {estimate}"
+                  margin: 10
+                  deco:
+                    background: { color: b29e2aff }
+            conditions:
+              capacity > 70:
+                string:
+                  text: "{state}  {capacity}%  {estimate}"
+                  margin: 10
+                  deco:
+                    background: { color: 34a339ff }
+              capacity < 30:
+                string:
+                  text: "{state}  {capacity}%  {estimate}"
+                  margin: 10
+                  deco:
+                    background: { color: a33734ff }
