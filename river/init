@@ -184,6 +184,7 @@ riverctl xcursor-theme Sweet-cursors
 libinput-gestures-setup start # Touchpad gestures
 
 pipewire &  # Audio
-yambar &    # Status bar
+dunst &     # Notifications
 devmon &    # Automount
+yambar &    # Status bar
 swaybg -m fill -i ~/Media/school-of-serenity.png -c 000000 &
