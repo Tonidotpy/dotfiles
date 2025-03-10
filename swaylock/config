@@ -1,0 +1,53 @@
+# --- GENERAL --- #
+ignore-empty-password
+# no-unlock-indicator
+# show-keyboard-layout
+hide-keyboard-layout
+# disable-caps-lock-text
+indicator-caps-lock
+# indicator-idle-visible
+indicator-radius=235
+indicator-thickness=15
+indicator-x-position=958
+# indicator-y-position=0
+# line-uses-inside
+line-uses-ring
+
+# --- IMAGE --- #
+image=$XDG_CONFIG_HOME/swaylock/wallpaper
+scaling=fill
+
+# --- FONT --- #
+font=RobotoMono Nerd Font
+font-size=25
+
+# --- COLORS --- #
+color=000000ff
+inside-color=00000000
+inside-clear-color=ffffff55
+inside-caps-lock-color=00000000
+inside-ver-color=00000000
+inside-wrong-color=00000000
+key-hl-color=ffffff55
+caps-lock-key-hl-color=ffffff55
+bs-hl-color=000000ff
+caps-lock-bs-hl-color=000000ff
+layout-bg-color=00000000
+layout-border-color=00000000
+layout-text-color=00000000
+# line-color=00000000
+# line-clear-color=ffffff55
+# line-caps-lock-color=00000000
+# line-ver-color=00000000
+# line-wrong-color=00000000
+ring-color=00000000
+ring-clear-color=00000000
+ring-caps-lock-color=00000000
+ring-ver-color=9a4baf66
+ring-wrong-color=ce4a4a99
+separator-color=00000000
+text-color=ffffffff
+text-clear-color=ffffffff
+text-caps-lock-color=ffffffff
+text-ver-color=9a4bafff
+text-wrong-color=ce4a4aff
