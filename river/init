@@ -188,3 +188,4 @@ dunst &     # Notifications
 devmon &    # Automount
 yambar &    # Status bar
 swaybg -m fill -i ~/Media/school-of-serenity.png -c 000000 &
+exec dbus-update-activation-environment DISPLAY I3SOCK SWAYSOCK WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=river

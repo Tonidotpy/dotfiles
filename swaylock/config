@@ -8,7 +8,7 @@ indicator-caps-lock
 # indicator-idle-visible
 indicator-radius=235
 indicator-thickness=15
-indicator-x-position=958
+# indicator-x-position=958
 # indicator-y-position=0
 # line-uses-inside
 line-uses-ring
