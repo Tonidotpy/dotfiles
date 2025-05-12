@@ -1,9 +1,9 @@
 local lsp = require('lsp-zero').preset({})
 
-lsp.ensure_installed({
-    'clangd',
-    'lua_ls',
-})
+-- lsp.ensure_installed({
+--     'clangd',
+--     'lua_ls',
+-- })
 
 -- Fix undefined global 'vim'
 lsp.nvim_workspace()
@@ -16,7 +16,6 @@ lsp.set_preferences({
         hint = 'H',
         info = 'I'
     },
-
 })
 
 lsp.on_attach(function(client, bufnr)

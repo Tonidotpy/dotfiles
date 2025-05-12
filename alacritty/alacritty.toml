@@ -2,6 +2,7 @@
 import = [
     "${XDG_CONFIG_HOME}/alacritty/themes/themes/kanagawa_wave.toml"
 ]
+ipc_socket = false
 
 [window]
 decorations = "None"
