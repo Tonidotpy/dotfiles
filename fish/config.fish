@@ -9,7 +9,7 @@ if status is-login
     end
 
     # Set default brightness
-    light -S 20
+    light -I
 
     # Start River Window Manager
     dbus-run-session river

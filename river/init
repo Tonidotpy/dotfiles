@@ -143,8 +143,8 @@ do
     riverctl map $mode None XF86AudioNext  spawn 'playerctl next'
 
     # Control screen backlight brightness with light (https://gitlab.com/dpeukert/light)
-    riverctl map $mode None XF86MonBrightnessUp   spawn 'light -A 5'
-    riverctl map $mode None XF86MonBrightnessDown spawn 'light -U 5'
+    riverctl map $mode None XF86MonBrightnessUp   spawn 'light -A 5 && light -O'
+    riverctl map $mode None XF86MonBrightnessDown spawn 'light -U 5 && light -O'
 
     # Open calculator with qalc
     riverctl map $mode None XF86Calculator spawn 'alacritty -e qalc'
