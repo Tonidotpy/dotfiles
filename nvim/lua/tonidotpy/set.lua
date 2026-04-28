@@ -38,3 +38,4 @@ vim.opt.colorcolumn = "80"
 
 -- Set leader key
 vim.g.mapleader = " "
+vim.g.maplocalleader = "\\"

@@ -6,3 +6,4 @@ abbr -a gpr git pull --rebase
 abbr -a gcmsg git commit --message
 abbr -a glg git log --stat
 abbr -a glgg git log --graph
+abbr -a gba git branch --all
