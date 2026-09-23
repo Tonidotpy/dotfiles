@@ -1,4 +1,5 @@
 abbr -a gst git status
+abbr -a gw git switch
 abbr -a ga git add
 abbr -a gl git pull
 abbr -a gp git push

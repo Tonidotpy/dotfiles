@@ -15,6 +15,10 @@ if status is-login
     # Set default brightness
     light -I
 
+    # FIX: For additional fonts figma requires the desktop agent which is
+    # unofficial for Linux
+    runsvdir "$XDG_DATA_HOME/runit/service" &
+
     # Start River Window Manager
     dbus-run-session river
 end
@@ -22,3 +26,7 @@ end
 if status is-interactive
     tellme
 end
+
+# bun
+set --export BUN_INSTALL "$HOME/.bun"
+set --export PATH $BUN_INSTALL/bin $PATH
